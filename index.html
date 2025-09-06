@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Data Selling Pay</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loading-overlay" class="loading-overlay" aria-hidden="true">
+  <div class="loading-box">
+    <p id="loading-text">Loading… 0%</p>
+    <div class="progress"><div id="progress-bar"></div></div>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="emoji">✨</div>
+  <h1>Data-Selling — Quick Pay</h1>
+  <p class="subtitle">Secure • Simple • Colorful</p>
+</header>
+
+<main class="container">
+  <section class="card pay-card">
+    <h2>Pay Now</h2>
+    <p class="small">UPI ID: <strong>6005099281@mbk</strong></p>
+    <p class="price">Price: ₹79 only</p>
+    <div class="buttons">
+      <button class="pay-btn" data-method="gpay">Pay with GPay</button>
+      <button class="pay-btn" data-method="paytm">Pay with Paytm</button>
+      <button class="pay-btn" data-method="phonepe">Pay with PhonePe</button>
+      <button id="scan-qr">Scan QR</button>
+    </div>
+
+    <div class="qr-block" id="qr-block" aria-hidden="true">
+      <img src="assets/qr.png" alt="Payment QR code">
+      <p>Scan this QR from any UPI app to pay ₹79.</p>
+    </div>
+
+    <div class="after-pay" id="after-pay" aria-hidden="true">
+      <p class="notice">Your payment is about to be received, please proceed…</p>
+      <label>After payment enter your Transaction/UTR ID:</label>
+      <input id="utr" placeholder="Enter UTR / Txn ID">
+      <button id="submit-utr">Submit UTR</button>
+      <p id="utr-msg" class="muted"></p>
+    </div>
+  </section>
+
+  <section class="card contact-card">
+    <h2>Get App</h2>
+    <p>Download our app to get full features.</p>
+    <a id="get-app" class="get-app" href="#" target="_blank" rel="noopener">Get App</a>
+
+    <h2>WhatsApp Support</h2>
+    <p>Contact us for help.</p>
+    <a id="whatsapp-btn" class="whatsapp" href="#" target="_blank" rel="noopener">Contact on WhatsApp</a>
+  </section>
+</main>
+
+<div id="notif-container" class="notif-container"></div>
+
+<footer class="footer">
+  <p>Demo site — edit script.js to add WhatsApp number and App link.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
